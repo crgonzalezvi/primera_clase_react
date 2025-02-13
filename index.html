@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"></div>
+</body>
+<script type="text/babel">
+    const container = document.getElementById('app');
+    const root = ReactDOM.createRoot(container);
+    function PrimerComponente(){
+        return <h1>Acá se muestra el H1 desde un primer componente</h1>
+    }
+
+    root.render(
+        <div>
+            <h1>Hola Mundo</h1>
+            <PrimerComponente/>
+            <PrimerComponente/>
+            <PrimerComponente/>
+        </div> 
+    );
+</script>
+</html>
